@@ -1,0 +1,7 @@
+<!-- Should display the task's details (content, date of creation, etc.) and a back-link to the index page. -->
+
+<h2>  <%= @task.id%> : <%= @task.name %> </h2>
+<p> Description : <%= @task.content %> </p>
+<p>Status: <strong><%= @task.status %></strong></p>
+
+<%= link_to "Home page", tasks_path %>
